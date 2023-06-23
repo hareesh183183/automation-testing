@@ -1,7 +1,7 @@
 // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
-def server = Artifactory.server "MOPS Artifactory"
+//def server = Artifactory.server "MOPS Artifactory"
 // Create an Artifactory Maven instance.
-def rtMaven = Artifactory.newMavenBuild()
+//def rtMaven = Artifactory.newMavenBuild()
 def buildInfo
 pipeline {
     agent any
