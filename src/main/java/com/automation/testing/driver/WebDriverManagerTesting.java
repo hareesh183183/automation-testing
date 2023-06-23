@@ -62,6 +62,9 @@ public class WebDriverManagerTesting {
 			options.addArguments("--headless");
 			options.addArguments("disable-gpu");
 			options.addArguments("window-size=1400,2100");
+			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--ignore-ssl-errors=yes");
+			options.addArguments("--ignore-certificate-errors");
 			WebDriverManager.edgedriver().setup();
 			WebDriver driver = new EdgeDriver(options);
 
