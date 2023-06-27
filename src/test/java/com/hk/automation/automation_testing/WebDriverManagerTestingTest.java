@@ -13,7 +13,7 @@ public class WebDriverManagerTestingTest {
 	public void test() {
 		WebDriverManagerTesting test = new WebDriverManagerTesting();
 		test.testChromeDriver();
-		//test.testEdgeDriver();
+		test.testEdgeDriver();
 		test.testMozillaDriver();
 	}
 }
