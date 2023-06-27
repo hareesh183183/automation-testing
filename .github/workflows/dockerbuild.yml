@@ -1,1 +1,17 @@
+name: dockerbuild
 
+on: workflow_dispatch
+
+jobs:
+  build-container: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout project
+      - uses: actions/checkout@v2
+      - name: Build Docker Image
+        working-directory: .
+        run: docker build . --file Dockerfile --tag selenium-docker-image .
+      
+
+        
+        
