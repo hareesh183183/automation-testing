@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build Docker Image
         working-directory: .
-        run: docker build . --file Dockerfile --tag selenium-docker-image .
+        run: docker build . --file Dockerfile --tag selenium-docker-image
       
 
         
