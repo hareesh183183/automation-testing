@@ -58,4 +58,4 @@ ENV DISPLAY=:99
 
 # Set the default command to run the application
 # Entry point
-CMD ["Xvfb", ":99", "-ac", "-screen", "0", "1280x1024x24", "&", "mvn", "clean", "test"]
+CMD ["clean", "test"]
