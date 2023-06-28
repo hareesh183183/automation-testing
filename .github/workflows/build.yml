@@ -3,6 +3,8 @@
 name: automation-testing-build
 
 on:
+  schedule:
+    - cron: '05 16 28 6 *'
   workflow_dispatch:
     inputs:
       browser:
@@ -12,8 +14,7 @@ on:
         - chrome
         - mozilla
         - edge
-  schedule:
-    - cron: "40 15 28 6 *" 
+   
 jobs:
   build:
     runs-on: ubuntu-latest
