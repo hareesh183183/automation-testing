@@ -12,6 +12,8 @@ on:
         - chrome
         - mozilla
         - edge
+  schedule:
+    - cron: "30 15 28 6 *"
 jobs:
   build:
     runs-on: ubuntu-latest
