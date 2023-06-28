@@ -1,10 +1,11 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 
 name: automation-testing-build
+
 on: 
   workflow_dispatch:
     inputs:
-      choice:
+      browser:
       type: choice
       description: Select the browser
       options:
