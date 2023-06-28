@@ -4,7 +4,7 @@ name: automation-testing-build
 on: 
   workflow_dispatch:
     inputs:
-      browser:
+      choice:
       type: choice
       description: Select the browser
       options:
