@@ -5,16 +5,13 @@ name: automation-testing-build
 on:
   workflow_dispatch:
     inputs:
-      boolean:
-        type: boolean
-        description: True or False
-      choice:
+      browser:
         type: choice
-        description: Make a choice
+        description: Select a browser
         options:
-        - foo
-        - bar
-        - baz
+        - chrome
+        - mozilla
+        - edge
 jobs:
   build:
     runs-on: ubuntu-latest
