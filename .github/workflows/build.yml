@@ -4,7 +4,7 @@ name: automation-testing-build
 
 on:
   schedule:
-    - cron: '40 12 28 6 *'
+    - cron: '20 13 28 6 *'
   workflow_dispatch:
     inputs:
       browser:
