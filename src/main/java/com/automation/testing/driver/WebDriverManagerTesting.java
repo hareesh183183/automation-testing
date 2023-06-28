@@ -28,7 +28,7 @@ public class WebDriverManagerTesting {
 			driver.get("https://www.google.com/");
 			driver.quit();
 			System.out.println("CHROME Driver Ran successfully");
-			System.out.println("Browser: "+ System.getenv("inputs.browser"));
+			System.out.println("Browser: "+ System.getenv("INPUT_BROWSER"));
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw new RuntimeException("couldnt create CHROME driver");
