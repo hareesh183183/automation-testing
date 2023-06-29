@@ -27,7 +27,7 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build Docker image
-      run: docker build . --file Dockerfile --tag selenium-docker-image
+      run: docker build . --file Dockerfile --tag selenium-docker-image mvn install test
     - name: Run Docker selenium-docker-image tests
       run: docker compose run test
     - name: Build with Maven
