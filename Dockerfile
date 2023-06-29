@@ -58,4 +58,4 @@ ENV DISPLAY=:99
 
 # Set the default command to run the application
 # Entry point
-CMD ["clean", "test"]
+CMD ["mvn", "install", "test"]
