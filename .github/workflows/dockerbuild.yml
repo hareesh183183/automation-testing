@@ -27,9 +27,9 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build Docker image
-      run: docker build . --file Dockerfile --tag selenium-docker-image mvn install test
+      run: docker build . --file Dockerfile --tag selenium-docker-image
     - name: Run Docker selenium-docker-image tests
-      run: docker compose run test
+      run: docker run --rm -v "$(pwd)":/opt/maven -w /opt/maven selenium-docker-image mvn clean install
     - name: Build with Maven
       run: mvn -B package --file pom.xml test
     - name: Set current date as env variable
