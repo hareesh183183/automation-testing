@@ -29,7 +29,7 @@ jobs:
     - name: Build Docker image
       run: docker build . --file Dockerfile --tag selenium-docker-image
     - name: Run Docker selenium-docker-image tests
-      run: docker run --rm -v "$(pwd)":/opt/maven -w /opt/maven selenium-docker-image mvn clean install
+      run: docker run --rm -v "$(pwd)":/opt/maven -w /opt/maven selenium-docker-image mvn clean test
     - name: Build with Maven
       run: mvn -B package --file pom.xml test
     - name: Set current date as env variable
